@@ -1,0 +1,282 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕";
+  color: #333;
+}
+body {
+  background-color: #fff;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+/* 상단 */
+header {
+  width: 100%;
+  height: 100px;
+}
+.top {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.logo {
+
+  float: left;
+  width: 250px;
+  height: 100px;
+}
+.logo img {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+/* 상단메뉴 */
+.menu {
+  float: right;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+
+.navi > li {
+  float: left;
+  height: 40px;
+  width: 150px;
+  background-color: #1c5e0c;
+}
+.navi > li > a {
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.navi > li:hover >a{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.navi > li:hover .submenu{
+    display: block;
+}
+/* 서브메뉴 */
+.submenu{
+    height: 120px;
+    background-color: #aee712 ;
+   display: none;
+}
+.submenu > li {
+  height: 40px;
+  width: 150px;  text-align: center; font-size: 16px;
+    line-height: 40px;background: #aee712 ;
+}
+.submenu> li > a:hover {
+    background-color: aqua;
+    color: aquamarine;
+}
+/* 본문 */
+.bodywrap{
+    width:1000px;
+    height: 500px;
+ 
+}
+/* 이미지 슬라이드 */
+.imgslide{
+    width:1000px;
+    height: 300px;
+    position: relative;
+}
+.imgslide >a {
+    display:block;
+
+}
+.imgtext{
+    background-color:rgba(162, 28, 28, 0.5);
+    width: 300px;
+    height:50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+ 
+}
+/* 콘텐츠 */
+.contents{
+    width: 1000px;
+    height:200px;
+}
+/* 공지사항 */
+.notice{
+    width:390px;
+    height:180px;
+    float: left;
+    margin-top: 10px;
+ 
+   
+}
+.tab{
+    width:400px;
+    float: left;
+  
+}
+
+.tab h4{
+    /* display: inline-block; */
+ background-color:#fff01c;
+ width:120px;
+ height:20px;
+ font-size: 14px;
+ text-align: center;
+ /* float: left; */
+ font-weight:bold;
+
+}
+.notice > div{
+    width:390px;
+    border-bottom-width: 2px;
+    border-bottom-color:#ffda0a;
+    border-bottom-style: solid;
+}
+.notice li{
+    width:390px;
+    height:38px;
+    line-height: 38px;
+    font-size: 14px;
+    border-bottom: solid 2px #ffda0a;
+    float: left;
+   
+}
+.notice li:nth-child(2n){
+ background-color: #fabd43;   
+}
+.notice li:hover a{
+    font-weight: bold;
+    color: #aee712;
+    
+}
+
+.notice li span{
+
+    float: right;
+    
+}
+/* 갤러리 */
+.gallery{
+    width:390px;
+    height:180px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  
+}
+.gallery > div{
+    width:390px;
+    border-bottom-width: 2px;
+    border-bottom-color:#ffda0a;
+    border-bottom-style: solid;
+}
+.gallery li{
+    float: left;
+}
+.gallery li:first-child{
+    margin-left: 1px;
+}
+.gallery img{
+    width: 119px;
+    height:145px;
+    margin: 5px;
+}
+.gallery img:hover{
+    opacity: 0.5;
+}
+/* 바로가기 */
+.shortcut{
+    width:200px;
+    height: 180px;
+    margin-top: 10px;
+    float: left; 
+    position: relative;
+    
+}
+.shortcut img{
+    width:190px;
+    height:180px; 
+}
+
+.sctext{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    background-color:rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height:30px;
+    display: block;
+    text-align: center; 
+}
+/* 하단 */
+footer{
+    height:100px;
+    width:1000px;
+
+}
+.copy{
+    width:500px;
+    height:100px;
+    background-color: #096116;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    line-height: 100px;
+    color: #fff;
+  
+}
+.site{
+    width:500px;
+    float: right;
+    background-color: #096116;
+    
+}
+.btmenu{
+    width:500px;
+    text-align: center;
+    line-height: 50px;
+    float: right;
+    height:50px;
+    font-size: 16px;
+    background-color: #096116;
+}
+.btmenu ul{
+    margin-left: 200px;
+  
+}
+.btmenu li >a{
+    float: left;
+    width:100px;
+    color: #fff;
+}
+.familysite{
+   height: 50px;
+   float: right;
+   background-color: #096116;
+}
+.familysite select{
+    float: right;
+    font-size: 14px;
+    margin-right: 15px;
+    width:280px;
+    height:30px;
+}

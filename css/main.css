@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.wrap{
+    width:1000px;
+    height:700px;
+    margin: 0 auto;
+   
+}
+.logo{
+    width: 1000px;
+    height:100px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.main1{
+    width:1000px;
+    height:300px;
+    float: left;
+}
+.main2{
+    width:1000px;
+    height:200px;
+    background-color: blue;
+    float:left;
+}
+.footer{
+    width:1000px;
+    height:100px;
+    background-color:rgb(170, 106, 28);
+    float:left;
+}
